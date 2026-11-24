@@ -17,7 +17,25 @@ public class Vehicule{
         this.disponible =true;
         
     }
-    public Vehicule(String immatriculation, String marque,String modele, double tarifJournalier){
+    //initialisation neutre
+    public Vehicule(String immatriculation, String marque,String modele, double tarifJournalier, int kilometrage){
         System.out.println("Constructeur d initialisaiton appele");
+        this.immatriculation =immatriculation;
+        this.marque = marque;
+        this.modele = modele;
+        this.kilometrage = 0;
+        this.tarifJournalier = tarifJournalier;
+        this.disponible =true;
     }
-}
+    //constructeur de copie
+    public Vehicule(Vehicule v){
+        System.out.println("Constructeur de copie appele");
+        if (v != null){
+            this.immatriculation = v.immatriculation;
+            this.marque = v.marque;
+            this.modele = v.modele;
+            this.kilometrage = v.kilometrage;
+            this.tarifJournalier = v.tarifJournalier;
+            this.disponible = v.disponible;
+        }
+    }
