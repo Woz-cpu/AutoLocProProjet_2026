@@ -1,11 +1,14 @@
 package vehicules;
 public class Vehicule{
-    String immatriculation;
-    String marque;
-    String modele;
-    int kilometrage;
-    double tarifJournalier;
-    boolean disponible;
+    private String immatriculation;
+    private String marque;
+    private String modele;
+    private int kilometrage;
+    private double tarifJournalier;
+    private boolean disponible;
+
+    private static int compteurVehicules = 0;
+    private static final String DEVISE = "EUR";
 //constructeur neutre
     public Vehicule(){
         System.out.println("Constructeur par defaut appele");

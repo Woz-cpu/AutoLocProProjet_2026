@@ -11,11 +11,11 @@ public class TestVehicules {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Immatriculation :");
-        private String immatriculation = sc.nextLine();
+        String immatriculation = sc.nextLine();
         System.out.print("Marque :");
-        private String marque = sc.nextLine();
+        String marque = sc.nextLine();
         System.out.print("Modele :");
-        private String modele = sc.nextLine();
+        String modele = sc.nextLine();
         
         Vehicule v2 = new Vehicule(immatriculation, marque, modele, 35.0);
         v2.afficherInfos();
