@@ -1,4 +1,4 @@
 package vehicules;
-public class Utilitaire {
+public class Utilitaire extends Vehicule {
     
 }

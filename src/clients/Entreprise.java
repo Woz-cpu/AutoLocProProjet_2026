@@ -1,5 +1,5 @@
 package clients;
 
-public class Entreprise {
+public class Entreprise extends Client {
     
 }
