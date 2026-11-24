@@ -39,6 +39,49 @@ public class Vehicule{
             this.disponible = v.disponible;
         }
     }
+
+    
+    public String getImmatriculation() {
+        return immatriculation;
+    }
+    public String getMarque() {
+        return marque;
+    }
+    public void setMarque(String marque) {
+        this.marque = marque;
+    }
+    public String getModele() {
+        return modele;
+    }
+    public void setModele(String modele) {
+        this.modele = modele;
+    }
+    public int getKilometrage() {
+        return kilometrage;
+    }
+    public void setKilometrage(int kilometrage) {
+        if (kilometrage < 0){
+            System.out.println("Erreur : le kilometrage ne peut pas etre negatif");
+        } else {
+            this.kilometrage = kilometrage;
+        }
+    }
+    public double getTarifJournalier() {
+        return tarifJournalier;
+    }
+    public void setTarifJournalier(double tarifJournalier) {
+        if (tarifJournalier < 0){
+            System.out.println("Erreur : le tarif ne peut pas etre negatif");
+        } else {
+            this.tarifJournalier = tarifJournalier;
+        }
+    }
+    public boolean isDisponible() {
+        return disponible;
+    }
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
     //methode pour modifier le contenu de la copie
     public void rouler(int kilometrage){
         this.kilometrage += kilometrage;
