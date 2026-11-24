@@ -46,6 +46,6 @@ public class Vehicule{
     // methode affichage
     public void afficherInfos(){
         System.out.println("Vehicule{immatriculation='" + immatriculation + "', marque='"+ marque + "', modele='" + modele +
-        "', km='" + kilometrage + "', tarif='" + tarifJournalier + "', disponible='" + disponible + "}");
+        "', km=" + kilometrage + ", tarif=" + tarifJournalier + ", disponible=" + disponible + "}");
     }
 }
