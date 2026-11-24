@@ -1,11 +1,14 @@
 package vehicules;
 public class Vehicule{
-    String immatriculation;
-    String marque;
-    String modele;
-    int kilometrage;
-    double tarifJournalier;
-    boolean disponible;
+    private String immatriculation;
+    private String marque;
+    private String modele;
+    private int kilometrage;
+    private double tarifJournalier;
+    private boolean disponible;
+
+    private static int compteurVehicules = 0;
+    private static final String DEVISE = "EUR";
 //constructeur neutre
     public Vehicule(){
         System.out.println("Constructeur par defaut appele");
@@ -15,7 +18,6 @@ public class Vehicule{
         this.kilometrage = 0;
         this.tarifJournalier =0.0;
         this.disponible =true;
-        
     }
     //initialisation neutre
     public Vehicule(String immatriculation, String marque,String modele, double tarifJournalier){
@@ -38,6 +40,49 @@ public class Vehicule{
             this.tarifJournalier = v.tarifJournalier;
             this.disponible = v.disponible;
         }
+    }
+
+    
+    public String getImmatriculation() {
+        return immatriculation;
+    }
+    public String getMarque() {
+        return marque;
+    }
+    public void setMarque(String marque) {
+        this.marque = marque;
+    }
+    public String getModele() {
+        return modele;
+    }
+    public void setModele(String modele) {
+        this.modele = modele;
+    }
+    public int getKilometrage() {
+        return kilometrage;
+    }
+    public void setKilometrage(int kilometrage) {
+        if (kilometrage < 0){
+            System.out.println("Erreur : le kilometrage ne peut pas etre negatif");
+        } else {
+            this.kilometrage = kilometrage;
+        }
+    }
+    public double getTarifJournalier() {
+        return tarifJournalier;
+    }
+    public void setTarifJournalier(double tarifJournalier) {
+        if (tarifJournalier < 0){
+            System.out.println("Erreur : le tarif ne peut pas etre negatif");
+        } else {
+            this.tarifJournalier = tarifJournalier;
+        }
+    }
+    public boolean isDisponible() {
+        return disponible;
+    }
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
     }
     //methode pour modifier le contenu de la copie
     public void rouler(int kilometrage){
