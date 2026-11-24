@@ -1,5 +1,5 @@
 package vehicules;
 
-public class VehiculeLuxe {
+public class VehiculeLuxe extends Voiture {
     
 }
