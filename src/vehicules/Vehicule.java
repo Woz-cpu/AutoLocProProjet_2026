@@ -15,7 +15,6 @@ public class Vehicule{
         this.kilometrage = 0;
         this.tarifJournalier =0.0;
         this.disponible =true;
-        
     }
     //initialisation neutre
     public Vehicule(String immatriculation, String marque,String modele, double tarifJournalier){
