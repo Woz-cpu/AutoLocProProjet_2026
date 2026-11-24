@@ -18,8 +18,8 @@ public class Vehicule{
         
     }
     //initialisation neutre
-    public Vehicule(String immatriculation, String marque,String modele, double tarifJournalier, int kilometrage){
-        System.out.println("Constructeur d initialisaiton appele");
+    public Vehicule(String immatriculation, String marque,String modele, double tarifJournalier){
+        System.out.println("Constructeur d'initialisaiton appele");
         this.immatriculation =immatriculation;
         this.marque = marque;
         this.modele = modele;
