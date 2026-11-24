@@ -1,5 +1,11 @@
 package test;
+import clients.Client;
 
 public class TestClients {
-    
+    public static void main(String[] args) {
+    Client client1 = new Client( "Sean", "MOY", "6767676767", "1234567890", 2007);
+    System.out.println("Nom: " + client1.nom);
+    Client client2 = new Client();
+    System.out.println("Nom: " + client2.nom);
+    }
 }
