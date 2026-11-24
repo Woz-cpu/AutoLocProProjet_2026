@@ -39,3 +39,13 @@ public class Vehicule{
             this.disponible = v.disponible;
         }
     }
+    //methode pour modifier le contenu de la copie
+    public void rouler(int kilometrage){
+        this.kilometrage += kilometrage;
+    }
+    // methode affichage
+    public void afficherInfos(){
+        System.out.println("Vehicule{immatriculation='" + immatriculation + "', marque='"+ marque + "', modele='" + modele +
+        "', km='" + kilometrage + "', tarif='" + tarifJournalier + "', disponible='" + disponible + "}");
+    }
+}
