@@ -13,6 +13,12 @@ public class Client {
     this.numeroPermis = "N/A";
     this.telephone = "N/A";
     this.anneeNaissance = 2000;
+    System.out.println("Client cree via le constructeur par defaut :");
+    System.out.println("Nom: " + this.nom);
+    System.out.println("Prenom: " + this.prenom);
+    System.out.println("Numero de permis: " + this.numeroPermis);
+    System.out.println("Telephone: " + this.telephone);
+    System.out.println("Annee de naissance: " + this.anneeNaissance);
     }
 
     public Client(String nom, String prenom, String numeroPermis, String telephone, int anneeNaissance) {
@@ -21,11 +27,12 @@ public class Client {
         this.numeroPermis = numeroPermis;
         this.telephone = telephone;
         this.anneeNaissance = anneeNaissance;
+        System.out.println("Client cree via le constructeur d'initialisation :");
         System.out.println("Nom: " + this.nom);
-        System.out.println("Prénom: " + this.prenom);
-        System.out.println("Numéro de permis: " + this.numeroPermis);
-        System.out.println("Téléphone: " + this.telephone);
-        System.out.println("Année de naissance: " + this.anneeNaissance);
+        System.out.println("Prenom: " + this.prenom);
+        System.out.println("Numero de permis: " + this.numeroPermis);
+        System.out.println("Telephone: " + this.telephone);
+        System.out.println("Annee de naissance: " + this.anneeNaissance);
     }
 
     public Client(Client c) {
